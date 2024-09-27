@@ -1,0 +1,120 @@
+<!--
+Trello Cousas
+
+1. Login → coisas
+
+
+
+1.1 - Conectar a database;
+1.2 - Fazer o script que pegue as infos e jogue para a database;
+1.2.1 - Adicionar um sistema que encrypte a senha e blá blá;
+
+→ Após realizar o login e cadastro  
+1.3 - Adicionar API do Google de auth(que tem suporte para o mongoBD);
+1.4 - Adicionar Sessão à aplicação
+1.5 - Recuperação de senha e afins
+1.6 - Coisas para se fazer quando logado
+1.6.1 - Perfil
+1.6.2 - Favoritos
+
+2. UI → js e css de páginas
+
+2.1 - Compult
+2.1.1 - A imagem dos dogs 
+2.1.2 - As colos do background das infos
+2.2 - footer
+2.3 - header
+
+3. Nova rota para acessa compult além do searchbar
+
+3.1 - 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/styles/login.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container-fluid p-0">
+        <div class="backgroundImg">            
+        </div>
+        <div class="box">
+            <img src="/image/LogarTrans.webp" width="130" id="logo">
+            <form method="post" action="/login" class="fLogin">
+                <!-- <div id="signInMessage" class="messageDiv" style="display:nome;"></div> -->
+                <div class="box-itens">
+                    <div class="row label-u">
+                        <p>Email</p>
+                        <small id="emailHelp" class="form-text user-l"> *</small>
+                    </div>
+                    <input type="text" class="form-i user" name="email" placeholder="Email ou Usuário" size="27">
+                    <div class="row label-p">
+                        <p>Senha </p>
+                        <small id="senhaHelp" class="form-text pass-l"> *</small>
+                    </div>
+                    <input type="password" class="form-i pass" name="pass" placeholder="Senha" size="27">
+                    <input type="button" class="button" accesskey="enter" value="Logar">
+                </div>
+            </form>
+            <div class="links">
+                <div class="cadastro">
+                    <p>Não possui uma conta? 
+                        <a href="/cadastro" >Cadastre-se!</a>
+                    </p>
+                </div>
+                <div class="forget">
+                    <p>Esqueceu a Senha? 
+                        <a href="/login/recovery" id="esqueceusenha">Recuperar</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row divider">
+                <div class="col divisor l"></div>
+                <p class="col prh">ou</p>
+                <div class="col divisor r"></div>
+            </div>
+            <div class="box-api">
+                <div class='row api-iten gg'>
+                    <img src="https://www.svgrepo.com/show/380993/google-logo-search-new.svg" style="max-width:22px; min-width: 22px; margin: 0px 10px 0px 10px;">
+                    <p>Continuar com o Google</p>
+                </div>
+                <!-- fazer a img e texto ficarem na mesma linha e uma div solo pra cada -->
+                <div class='row api-iten'>
+                    <img src="https://a.travel-assets.com/egds/marks/facebook.svg" style="max-width:22px; min-width: 22px; margin: 0px 10px 0px 10px;">
+                    <p>Continuar com o Facebook</p>
+                </div>
+                <div class='row api-iten'>
+                    <img src="https://a.travel-assets.com/egds/marks/apple.svg" style="max-width:22px; min-width: 22px; margin: 0px 10px 0px 10px;">
+                    <p>Continuar com a Apple</p>
+                </div>
+                <div class='row api-iten'>
+                    <img src="https://auth.openai.com/assets/microsoft-logo-BUXxQnXH.svg" style="max-width:22px; min-width: 22px; margin: 0px 10px 0px 10px;">
+                    <p>Continuar com a Microsoft</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="/scripts/login.js"></script>
+        <!---<script src="/scripts/firebaseConfig.js"></script>--->
+</body>
+
+</html>

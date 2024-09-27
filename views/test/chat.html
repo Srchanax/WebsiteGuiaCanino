@@ -1,0 +1,41 @@
+<!--
+  Codigo gerado via chatGPT(kappa)
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de leitura de arquivo JSON local</title>
+</head>
+<body>
+  <input type="file" id="fileInput" accept=".json"> <!-- Input para seleção do arquivo -->
+  <div id="output"></div> <!-- Div para exibir os dados do JSON -->
+
+  <script>
+    document.getElementById('fileInput').addEventListener('change', function(event) {
+      const file = event.target.files[0]; // Obter o arquivo selecionado
+      const reader = new FileReader(); // Criar um FileReader
+
+      reader.onload = function(event) {
+        const content = event.target.result; // Conteúdo do arquivo lido
+        const jsonData = JSON.parse(content); // Parse do JSON
+
+        // Exibir os dados do JSON
+        document.getElementById('output').innerText = `
+          Nome: ${jsonData.nome}
+          Idade: ${jsonData.idade}
+          Cidade: ${jsonData.cidade}
+        `;
+      };
+
+      reader.onerror = function(event) {
+        console.error('Erro ao ler o arquivo:', event.target.error);
+      };
+
+      reader.readAsText(file); // Ler o arquivo como texto
+    });
+  </script>
+</body>
+</html>

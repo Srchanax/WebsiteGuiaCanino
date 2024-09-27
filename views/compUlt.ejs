@@ -1,0 +1,364 @@
+<!--
+["nome", "tamanho", "peso", "corPelagem", "tipoPelagem", "expectativaVida", "nivelEnergia", "temperamento", "facilidadeTreinamento", "propensaoDoencasGeneticas", "necessidadesCuidadosPelagem", "necessidadesExercicio", "requisitosEspaco", "nivelSocializacao", "nivelProtecao", "nivelLatido", "precoMedioCompra", "custosVeterinariosMensais", "custosAlimentacaoMensais"]
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comparador</title>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <link>
+    <!-- Boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <!-- Font Awesome-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+    <!-- Us -->
+    <link rel="stylesheet" href="/styles/compult.css">
+
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+
+    <div class="container-fluid p-0">
+        <div class="row" id="main-content">
+            <!-- Não to usando container fluid pois essa tela tem ser não redimensional, funcionando via H e V scrolls -->
+            <div id="comp-box">
+
+                <div class="roww">
+                    <div class="col col-content" id="coll-topics">
+                        <div class="col" id="card-top"></div> <!-- #card-top -->
+                        
+                        <div class="col" id="cell-head">
+                            <div class="t-bg">
+                                <div class="col">
+                                    <h5>Físico</h5>
+                                </div>
+                            </div>
+                            <div class="oranje"></div>
+                            
+                            <div class="col" id="topics1">
+                                <div class="row" id="r-hard">
+                                    <p id="r-1">Tamanho</p>
+                                </div>
+                                <div class="row" id="r-soft">
+                                    <p id="r-2">Peso</p>
+                                </div>
+                                <div class="row" id="r-hard">
+                                    <p id="r-3">Cor da pelagem</p>
+                                </div>
+                                <div class="row" id="r-soft">
+                                    <p id="r-4">Tipo de pelagem</p>
+                                </div>
+                                <div class="row" id="r-hard">
+                                    <p id="r-5">Expectativa de vida</p>
+                                </div>
+                            </div>
+
+                            <div class="t-bg">
+                                <div class="col">
+                                    <h5>Comportamento</h5>
+                                </div>
+                            </div>
+                            <div class="oranje"></div>
+
+                            <div class="col" id="topics2">
+                                <div class="row" id="r-hard">
+                                    <p id="r-1">Nível de energia</p>
+                                </div>
+                                <div class="row" id="r-soft">
+                                    <p>Temperamento</p>
+                                </div>
+                                <div class="row" id="r-hard">
+                                    <p>Facilidade de treinamento</p>
+                                </div>
+                            </div>
+
+                            <div class="t-bg">
+                                <div class="col">
+                                    <h5>Saúde e cuidados</h5>
+                                </div>
+                            </div>
+                            <div class="oranje"></div>
+
+                            <div class="col" id="topics3">
+                                <div class="row" id="r-hard">
+                                    <p>Propesão à doenças genéticas</p>
+                                </div>
+                                <div class="row" id="r-soft">
+                                    <p>Cuidados com a pelagem</p>
+                                </div>
+                                <div class="row" id="r-hard">
+                                    <p>Necessidade de exercícios</p>
+                                </div>
+                            </div>
+
+                            <div class="t-bg">
+                                <div class="col">
+                                    <h5>Compatibilidade</h5>
+                                </div>
+                            </div>
+                            <div class="oranje"></div>
+
+                            <div class="col" id="topics4">
+                                <div class="row" id="r-hard">
+                                    <p>Requisitos de espaço</p>
+                                </div>
+                                <div class="row" id="r-soft">
+                                    <p>Nivel de socialização</p>
+                                </div>
+                                <div class="row" id="r-hard">
+                                    <p>Nível de proteção</p>
+                                </div>
+                                <div class="row" id="r-soft">
+                                    <p>Nivel de latido</p>
+                                </div>
+                            </div>
+
+                            <div class="t-bg">
+                                <div class="col">
+                                    <h5>Custos</h5>
+                                </div>
+                            </div>
+                            <div class="oranje"></div>
+
+                            <div class="col" id="topics5">
+                                <div class="row" id="r-hard">
+                                    <p>Preço médio de compra</p>
+                                </div>
+                                <div class="row" id="r-soft">
+                                    <p>Custos médicos mensais</p>
+                                </div>
+                                <div class="row" id="r-hard">
+                                    <p>Custos de alimentação mensais</p>
+                                </div>
+                            </div>
+                            
+                        </div> <!-- #cell-head -->
+                    </div> <!-- #coll -->
+                    
+                    <div class="col col-content" id="coll-search">
+                        
+                        <div class="col" id="card-search">
+                            <div id="card-search-space"></div>
+                            <input type="search" id="compara" name="compara" class="form-control rounded" placeholder="Buscar" aria-label="Search" aria-describedby="search-addon"/>
+                            <ul class="searchRes" id="resComp"></ul>
+                        </div>
+                    </div> <!-- #coll -->
+                </div> <!-- .roww -->
+
+            </div> <!-- comp-box -->
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+        <script src="scripts/comparador.js"></script>
+        <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<!-- AQUI falescido coll-2 Pug
+<div class="col" id="card">
+    <div class="row" id="x">
+        <div></div>
+        <p> x </p>
+    </div>
+    <div class="pokemon-card">
+        <h4 id="nome-2">Pug</h4>
+        <img id="dogphoto-2" src="/image/image40.png">
+    </div>
+
+</div>
+
+<div class="col" id="cell-head">
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div class="row" id="r-hard">
+            <p>Tamanho</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Peso</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Cor da pelagem</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Tipo de pelagem</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Expectativa de vida</p>
+        </div>
+    </div>
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div class="row" id="r-hard">
+            <p>Nível de energia</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Facilidade de treinamento</p>
+        </div>
+    </div>
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div class="row" id="r-hard">
+            <p style="padding: 14px 0px;">Nível de energia</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Facilidade de treinamento</p>
+        </div>
+    </div>
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div class="row" id="r-hard">
+            <p>Nível de energia</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Facilidade de treinamento</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+    </div>
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div id="r-hard">
+            <p>Nível de energia</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p style="padding: 14px 0px;">Facilidade de treinamento</p>
+        </div>
+    </div>
+
+</div> <!-- #cell-head -->
+
+
+<!-- AQUI Falecido coll-1 Pinscher
+<div class="col" id="card">
+    <div class="row" id="x">
+        <div></div>
+        <p> x </p>
+    </div>
+    <div class="pokemon-card">
+        <h4 id="nome">Chihuahua</h4>
+        <img id="dogphoto" src="/image/image36.png">
+    </div>
+
+</div> <!-- #card -->
+<!-- AQUI
+<div class="col" id="cell-head">
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div class="row" id="r-hard">
+            <p>Tamanho</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Peso</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Cor da pelagem</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Tipo de pelagem</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Expectativa de vida</p>
+        </div>
+    </div>
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div class="row" id="r-hard">
+            <p>Nível de energia</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Facilidade de treinamento</p>
+        </div>
+    </div>
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div class="row" id="r-hard">
+            <p style="padding: 14px 0px;">Nível de energia</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Facilidade de treinamento</p>
+        </div>
+    </div>
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div class="row" id="r-hard">
+            <p>Nível de energia</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p>Facilidade de treinamento</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+    </div>
+
+    <div class="no-oranje"></div>
+    <div class="col" id="infos">
+        <div id="r-hard">
+            <p>Nível de energia</p>
+        </div>
+        <div class="row" id="r-soft">
+            <p>Temperamento</p>
+        </div>
+        <div class="row" id="r-hard">
+            <p style="padding: 14px 0px;">Facilidade de treinamento</p>
+        </div>
+    </div>
+
+</div> <!-- #cell-head -->

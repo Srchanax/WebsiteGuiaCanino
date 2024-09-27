@@ -1,0 +1,83 @@
+
+.f-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(96, 96, 96, 0.6);
+  margin: 10px 0px 10px 0px;
+}
+
+.footer-box {
+  width: 100%;
+  height: fit-content;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 5% 0px 5%;
+  /*background-color: orange;*/ /* Color arquivado */
+}
+
+.footer-box .c {
+  min-width: 200px;
+  padding: 0px 0px 25px 15px;
+  border: 1px /*solid green*/;
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado padrão do link */
+  color: black; /* Define a cor do link */
+}
+
+a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.col {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  height: 100%;
+}
+.c .topic {
+  color: black;
+  padding: 10px 0px 0px 0px;
+}
+.c a {
+  color: black;
+}
+
+.b-divider {
+  width: 90%;
+  height: 1px;
+  background-color: rgba(96, 96, 96, 0.6);
+  margin: 10px 0px 10px 5%;
+}
+/*.b-divider {
+  width: 100%; 
+  height: 1px;
+  background-color: rgba(96, 96, 96, 0.6);
+  margin: 10px 0px; 
+  padding: 0; 
+  box-sizing: border-box; 
+}*/
+
+
+.f-bottom {
+  width: 90%;
+  margin: 0px 0px 0px 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.l, .r {
+  width: fit-content;
+  height: 30px;
+  margin: 0px 0px 0px 10px;
+}
+
+.space-b {
+
+}
+
+svg {
+  width: 24;
+  height: 24;
+  fill: rgb(116, 118, 126);
+}

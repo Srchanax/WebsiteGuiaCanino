@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.col {
+    margin: 0px;
+}
+
+.container-fluid {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ece8d2;
+    background-image: url("/image/reg-bg.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.box {
+    border-radius: 16px;
+    width: 350px;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+    background-color: white;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 30px 15px 30px;
+    box-shadow: 0px 0px 15px black;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.box-itens {
+    margin: 0px 0px 0px 0px;
+}
+
+.form-i {
+    margin: 10px 0px 0px 0px;
+    padding: 2px 0px 2px 12px;
+    border-radius: 20px;
+}
+
+.form-i:focus-within {
+    background-color: #bdbdbd;
+}
+
+.email {
+    margin: 10px 0px 0px 0px;
+}
+
+.button {
+    width: 270px;
+    margin: 15px 0px 0px 0px;
+    padding: 1px 0px 1px 0px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    background-color: rgba(175, 164, 102, 0.95);
+    text-align: center;
+    padding-left: 0;
+}
+
+.button:hover {
+    background-color: rgba(165, 154, 92, 1);
+}
+
+.button:active {
+    box-shadow: 0px 0px 10px rgba(175, 164, 102, 0.95);
+}
+
+.login {
+    margin: 12px 0px 0px 0px;
+}
+
+.login a {
+    color: #AFA466;
+}
+.login a:hover {
+    color: blue;
+}
+
+.divider {
+    max-height: 26px;
+    margin-top: 12px;
+}
+
+.divider p {
+    margin: 0px 5px 0px 5px;
+    padding: 0px;
+}
+
+.divisor {
+    min-width: 124px;
+    height: 1px;
+    background-color: black;
+}
+
+.l {
+    margin: 12px 0px 0px 15px;
+}
+
+.r {
+    margin: 12px 15px 0px 0px;
+}
+
+.box-api {
+    margin-top: 5px;
+}
+
+.api-iten {
+    width: 100%;
+    height: fit-content;
+    margin: 10px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.api-iten:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+    cursor: pointer;
+}
+
+.api-iten:active {
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 1);
+}
+
+
+
+
+
+

@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw; /* Define a largura máxima como o tamanho da viewport */
+    overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+}
+
+.fotor {
+    display: table;
+    text-decoration: none;
+}
+
+.field {
+    display: table-row;
+    align-items: center; /* Alinha verticalmente o texto e o input */
+    margin-bottom: 10px; /* Espaçamento entre as linhas */
+    height: 100%;
+    width: 100%;
+    text-align: start;
+}
+
+.field input {
+    margin-left: 10px; /* Espaçamento entre o texto e o input */
+    padding: 5px; /* Adiciona um pouco de padding para melhor visualização */
+}
+
+.container-fluid {
+    width: 100vw;
+    min-height: 100vh; /* Alterado para min-height */
+    background-image: url("../login-bg.webp");
+    background-size: cover;
+    background-position: top;
+    position: relative; /* Adicionado */
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: fit-content; /* Garante que o contêiner ocupe toda a altura da viewport */
+}
+
+
+.form-control {
+    width: 70%;
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu button,
+.menu a {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.menu input[type="text"] {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    width: 1000px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-title {
+    color: #fff;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+}
+
+.footer-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Garante que a imagem de fundo fique abaixo dos outros elementos */
+    background-image: url('https://s3-alpha-sig.figma.com/img/d9fd/8ee1/a60c3d2f901fd63e7958126e88fb734f?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QAuGSO4y54EACvCuLJE0nLwI8~dc9Lmoyr83KTPinfwcPVKfQ5ZX0YvTP3RIjQDM1nVT5UDHDzPKxMJKvPZxjdTsaY08C25sUEKILVUtOZNAPxYbzD6KLRL4d-81AUf6O82bxCWQMfAM969jMAGkE05hcZWKR~20nWZ8zmxKF6wRVcRl2rglCSCfA6SdYrJLXT1GSXicMqthCcQ1aMbVCPalXZXmoIxgLAB3iHb2ITNAz0cduT0LWPb3hoO7BUfe6sp77TqM2Ew1uaYQooCN4-1MgAMxRojhOr6sno8RvBZ3Ch9VFtXZvLZQZTXWJz90MyelBnL7L2O5iOL9MYsZ5g_');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    /* Ajuste a opacidade conforme necessário */
+}
+
+.perfil {
+    width: 80%;
+    background-color: rgba(240, 240, 240, 0.47);
+    /* Cor de fundo com transparência */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+}
+
+.perfil_foto .fotor {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(https://www.sindpass.com.br/v.01/components/assets/img/login_avatar.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.perfil_importante {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: 2px;
+}
+
+.informacao_adicional {
+    text-align: center;
+}
+
+.informacao_adicional div {
+    margin-bottom: 10px;
+}
+
+.d-flex .img-fluid {
+    width: 158px;
+    height: 158px;
+    border: 1px solid #ccc;
+    /* Adicionando uma borda cinza */
+}
+
+.btn-rounded {
+    border-radius: 50px;
+    /* Define um raio maior para deixar o botão mais arredondado */
+    background-color: #96BAFF !important;
+    /* Altera a cor de fundo do botão */
+    border-color: #96BAFF !important;
+    /* Altera a cor da borda do botão */
+}
+
+.btn-rounded:hover {
+    background-color: #7FA5FF !important;
+    /* Altera a cor de fundo do botão ao passar o mouse */
+    border-color: #7FA5FF !important;
+    /* Altera a cor da borda do botão ao passar o mouse */
+}
+
+.conteudo {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}

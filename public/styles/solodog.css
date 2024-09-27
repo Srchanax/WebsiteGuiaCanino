@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw; /* Define a largura máxima como o tamanho da viewport */
+    overflow-x: hidden; /*Esconde a barra de rolagem horizontal */
+  }
+
+  .container-fluid {
+    width: 100vw;
+    min-height: 100vh;
+    /* Alterado para min-height */
+    background-color: rgb(238, 238, 238);
+    /* background-image: url("../login-bg.webp"); */
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    /* Adicionado */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    /* Alterado para column */
+    align-items: center;
+    /* Alterado para center */
+    padding: 100px 50px;
+    flex-grow: 1;
+  }
+
+  .apresentation {
+    width: 100%;
+    max-width: 1200px;
+    /* Adicionado */
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Alterado para flex-start */
+  }
+
+  .h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lemon", serif;
+    font-style: normal;
+  }
+
+  .dog {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    /* Adicionado */
+  }
+
+  .dogimg1 img {
+    width: 100%;
+    /* Alterado para 100% */
+    max-width: 100%;
+    /* Adicionado */
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .favoritar,
+  .compare-btn {
+    background-color: #d1ccc7;
+    /* Alterado para cinza calcario */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 15px 30px;
+    width: 100%;
+    color: black;
+    /* Alterado para preto */
+    border: none;
+    /* Adicionado */
+    cursor: pointer;
+    /* Adicionado */
+  }
+
+  .dogbuttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .dogimg2 {
+    /* background-image: url("../image39.png"); */
+    background-repeat: no-repeat;
+    height: 12vw;
+    width: 18vh;
+    border-radius: 10px;
+  }
+
+  .interrogacao {
+    position: relative;
+    margin-top: 21%;
+    height: auto;
+    width: auto;
+    text-align: center;
+    font-size: 75px;
+    color: black;
+  }
+
+  .doginfos {
+    background-color: white;
+    color: black;
+    flex: 2;
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    flex-shrink: 0;
+    /* Adicionado */
+  }
+
+  .footer-title {
+    color: #fff;
+  }
+
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-list li {
+    margin-bottom: 10px;
+  }
+
+  .footer-list li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .favoritar {
+    background-color: orange;
+    border-radius: 100%;
+    /* Para criar uma forma de bola */
+    width: 50px;
+    /* Largura e altura iguais para criar uma forma circular */
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .favoritar i {
+    color: white;
+    /* Cor do coração */
+    font-size: 24px;
+  }
+
+  .titulo {
+    margin-bottom: 0;
+    background-color: white;
+    color: white;
+  }
+
+  .doginfos.titulo .barra {
+    margin-top: 0px;
+    width: 90%;
+    height: 3px;
+    background-color: orange;
+  }
+
+  .barra {
+    margin-top: 0;
+    height: 2px;
+    background-color: orange;
+  }
+
+  .titulo h5 {
+    background-color: orange;
+    padding: 10px 10px;
+    width: 205px;
+    margin-bottom: 0px;
+  }
+
+  .informacoes {
+    display: flex;
+  }
+
+  .infos {
+    list-style: none;
+    font-weight: bold;
+  }
+
+  .infos li {
+    padding: 20px 5px;
+  }
+
+  .dados {
+    color: orange;
+    font-weight: bold;
+    margin-left: 100px;
+  }
+
+  .dados li {
+    padding: 20px 5px;
+    list-style: none;
+  }

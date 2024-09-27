@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container-fluid {
+    width: 100vw;
+    min-height: 100vh;
+    /* Alterado para min-height */
+    background-color: rgb(238, 238, 238);
+    background-image: url("../login-bg.webp");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    /* Adicionado */
+  }
+
+  .header {
+    width: 100vw;
+    height: 100px;
+    background-color: orange;
+  }
+
+  #header-box {
+    padding-top: 30px;
+    color: white;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0;
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown.clicked .dropdown-menu {
+    display: block;
+  }
+
+  .unclickable {
+    cursor: default;
+  }
+
+#search-row .col {
+    border: 1px solid green
+}
+
+#site-name {
+    width: fit-content;
+}
+
+#site-name h5 {
+    height: 100%;
+}
+
+#dLabel {
+    border: 0px;
+    background-color: orange;
+}
+
+
+
+.carrossel {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.carousel-item h5,
+p {
+    color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #000000;
+    /* Black */
+    border-color: #000000;
+    /* Black */
+}
+
+/* Custom styles for carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: #000000;
+    /* Black */
+}
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    flex-shrink: 0;
+    /* Adicionado */
+  }
+
+  .footer-title {
+    color: #fff;
+  }
+
+  .footer-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-list li {
+    margin-bottom: 10px;
+  }
+
+  .footer-list li a {
+    color: #fff;
+    text-decoration: none;
+  }

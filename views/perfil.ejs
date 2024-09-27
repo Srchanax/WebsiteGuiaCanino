@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perfil</title>
+  <!-- Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="
+  sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/perfil.css">
+
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <%- include('./partials/header') %>
+    
+    <div class="background-image"></div> Elemento para a imagem de fundo
+
+    <div class="conteudo">
+        <div class="perfil">
+            <div class="perfil_foto">
+                <img class="fotor" src="https://www.sindpass.com.br/v.01/components/assets/img/login_avatar.png" alt="¨-¨">
+            </div>
+            <form id="perfil-infos" method="post" action="/perfil">
+                <div class="perfil_importante">
+                    <div class="field">Seu nome de usuário:
+                        <input type="text" class="form-i user" name="user" placeholder="Seu nome de usuário">
+                    </div>
+                    <div class="field">Idade:
+                         <input type="text" class="form-i user" name="idade" placeholder="Sua idade">
+                    </div>
+                </div>
+            <form> 
+            <div class="informacao_adicional">  
+                <p>Informações sobre você para encontrar o seu cachorro ideal</p>
+                <div class="d-flex justify-content-between">
+                    <div class="text-center">
+                        <p>Espaço na sua moradia:</p>
+                        <select class="form-select" aria-label="Default select example" name="moradia" form="perfil-infos">
+                          <!-- <option selected>Espaço na sua moradia</option> -->
+                          <option value="pequeno" selected>Pouco</option>
+                          <option value="razoavel">Razoável</option>
+                          <option value="grande">Muito</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <p>Vive em clima:</p>
+                        <select class="form-select" aria-label="Default select example" name="clima" form="perfil-infos">
+                          <option value="quente" selected>Quente</option>
+                          <option value="frio">Frio</option>
+                          <option value="temperado">Temperado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary btn-rounded submtt">
+                        Enviar dados
+                    </button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+  </div>
+
+
+
+    <%- include('./partials/footer') %>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js"></script>
+</body>
+<!-- MATE ESSA TELAAAAAAAAAAAAAAAAAAAAAA - >:) -->
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    Importando a biblioteca Bootstrap CSS
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    Personalização
+    <link rel="stylesheet" href="/styles/perfil.css">
+</head>
+
+<body>
+    <div class="background-image"></div> Elemento para a imagem de fundo
+
+    <div class="header d-flex justify-content-between">
+        Adicionei "justify-content-between" para alinhar ao início
+        <div class="container d-flex align-items-center">
+            <div class="col-md-auto mr-auto" id="site-name">
+                Removi "col-12" e adicionei "mr-auto" para empurrar para o canto esquerdo
+                <h3>Guia Canino</h3>
+            </div>
+            <div class="menu">
+                <input type="text" class="form-control" placeholder="Busque por um pet...">
+            </div>
+            <a href="#" class="btn btn-link text-uppercase font-weight-bold text-white smaller-btn">Tela Principal</a>
+            Adicionei a classe "smaller-btn" para diminuir o tamanho
+            <a href="#" class="btn btn-link text-uppercase font-weight-bold text-white smaller-btn">Perfil</a>
+            Adicionei a classe "smaller-btn" para diminuir o tamanho
+            <div class="dropdown">
+                <button class="btn btn-link text-uppercase font-weight-bold dropdown-toggle smaller-btn" type="button"
+                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Adicionei a classe "smaller-btn" para diminuir o tamanho
+                    Opções
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Configurações</a>
+                    <a class="dropdown-item" href="#">Preferências</a>
+                    <a class="dropdown-item" href="#">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div> -->

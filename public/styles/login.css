@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(238, 238, 238);
+    background-image: url("/image/login-bg-edg.webp");
+    background-size: cover;
+    background-position: top;
+}
+
+.backgroundImg img {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+}
+
+.box {
+    border-radius: 16px;
+    width: 350px;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    margin: 0px 0px 0px 0px;
+    padding: 20px 30px 15px 30px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.form-i {
+    margin: 4px 0px 0px 0px;
+    padding: 2px 0px 2px 12px;
+    border-radius: 20px;
+}
+
+.form-i:focus-within {
+    background-color: #bdbdbd;
+}
+
+.label-u {
+    text-align: left;
+    margin: 45px 0px -20px 30px !important; /* important pra passar por cima do css do bootstrap kappa */
+}
+
+.err {
+    color: red !important;
+}
+.user-l {
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+.label-p {
+    text-align: left;
+    margin: 8px 0px -20px 30px !important; 
+}
+
+.pass-l {
+    margin: 0px 0xp 0x 5px;
+    margin-bottom: 2px;
+}
+
+.button {
+    width: 290px;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    border-radius: 20px;
+    color: aliceblue;
+    background-color: #AF6666;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+
+.links p {
+    margin: 2px 0px 0px 0px;
+}
+
+.divider {
+    max-height: 26px;
+    margin-top: 12px;
+}
+
+.divider p {
+    margin: 0px 5px 0px 5px;
+    padding: 0px;
+}
+
+.divisor {
+    min-width: 124px;
+    height: 1px;
+    background-color: black;
+}
+
+.l {
+    margin: 12px 0px 0px 15px;
+}
+
+.r {
+    margin: 12px 15px 0px 0px;
+}
+
+.box-api {
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.api-iten {
+    width: 95%;
+    height: fit-content;
+    margin: 2.5% 0% 0% 0%;
+    padding: 7px 2.5% 7px 2.5%;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: left;
+    align-content: baseline;
+}
+
+.api-iten:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+    cursor: pointer;
+}
+
+.api-iten:active {
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 1);
+}
+
+.api-iten p {
+    margin: 2px 0px 0px 0px;
+}
+
+
+
+/*
+.messageDiv{
+    background-color: hsl(049, 90%, 28%);
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeOut 7s forwards;
+}
+*/

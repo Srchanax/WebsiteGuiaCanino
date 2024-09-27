@@ -1,0 +1,26 @@
+<!--
+    Exemplo de tratamento de json (poggers)
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <script type="module">
+            
+            // Store JSON data in a JS variable
+            let json = '[{"nome": "Peter", "age": 22, "country": "United States"}, {"nome": "Petr", "age": 22, "country": "United States"}, {"nome": "Peter", "age": 22, "country": "United States"}]';
+            
+
+            // Converting JSON-encoded string to JS object
+            let obj = JSON.parse(json);
+
+            // Accessing individual value from JS object
+            alert(obj[1].nome); // Outputs: Peter
+            alert(obj[1].age); // Outputs: 22
+            alert(obj[1].country); // Outputs: United States
+        </script>
+    </body>
+</html>

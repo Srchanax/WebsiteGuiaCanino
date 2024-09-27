@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  /* Define a largura máxima como o tamanho da viewport */
+  overflow-x: hidden;
+  /* Esconde a barra de rolagem horizontal */
+}
+
+.container-fluid {
+  width: 100vw;
+  min-height: 100vh;
+  /* Alterado para min-height */
+  background-color: rgb(238, 238, 238);
+  background-image: url("../login-bg.webp");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  /* Adicionado */
+}
+
+.carrossel {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 150px;
+  border-radius: 12px;
+}
+
+.carousel-item h5,
+p {
+  color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {}
+
+/* Custom styles for carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #000000;
+  /* Black */
+}
+
+.footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  flex-shrink: 0;
+  /* Adicionado */
+}
+
+.footer-title {
+  color: #fff;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list li a {
+  color: #fff;
+  text-decoration: none;
+}

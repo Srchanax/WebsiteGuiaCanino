@@ -1,0 +1,49 @@
+<link rel ="stylesheet" type ="text/css" href ="/styles/header.css">
+
+<div class="header" style="position: fixed;">
+  <div class="row" id="header-box">
+    <div class="col-2" id="site-name">
+      <a href="/" class="link-body-emphasis">
+        <img src="image/Logo-site.webp" alt="Guia Canino" class="img-fluid">
+      </a>
+    </div>
+    
+    <div class="col-7" id="searchbar">
+      <form id="searchForm" method="GET" action="/compult">
+        <div class ="row" id ="stack">
+          <div class="col-10 ssbar" id="sbar-1">
+            <div class="input-group rounded">
+              <input type="search" id="searchInput" name="dog01" class="form-control rounded" placeholder="Busque por um pet..." aria-label="Search" aria-describedby="search-addon" />
+            </div>
+            <ul class="searchRes" id="res"></ul>
+          </div>
+          <div class="col-1 ssbar" id="sbar-2">
+            <div class="input-group rounded">
+              <input type="search" id="searchInput2" name="dog02" class="form-control rounded" placeholder="Busque por um pet..." aria-label="Search" aria-describedby="search-addon" />
+            </div>
+            <ul class="searchRes2" id="res2"></ul>
+          </div>
+
+          <div class="col-1 buttonSS">
+            <input type="button" class="buttn" id="sB" accesskey="enter" value="Pesquisar">
+          </div>
+          
+        </div>
+      </form>
+    </div>
+    
+    <div id="headerButtons" class="col-3">
+      <a href="login">
+        <button id="entrarButton" class="btn btn-primary" type="button">Entrar</button>
+      </a>
+      <a href="perfil">
+        <button  id="perfilButton" class="btn btn-primary" type="button">Opções</button>
+      </a>
+      <a>
+        <button id="sairButton" class="btn btn-danger" type="button">Sair</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/redirectSoloDog.js"></script> 
